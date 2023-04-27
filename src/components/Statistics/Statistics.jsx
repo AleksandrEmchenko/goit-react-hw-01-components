@@ -36,7 +36,7 @@ Statistics.propTypes = {
   id: PropTypes.number.isRequired,
 };
 
-{
+
   /* <ul className="stat-list">
 {stats.lenght > 0 &&
   stats.map(({ id, label, percentage }) => {
@@ -54,4 +54,4 @@ Statistics.propTypes = {
     );
   })}
 </ul> */
-}
+
