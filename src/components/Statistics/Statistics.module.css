@@ -1,0 +1,49 @@
+:root {
+  --firstTextColor: #000000;
+  --secondTextColor: #a1abb6;
+  --firstBackgroundColor: #f3f6f9;
+  --backgroundcolor: #e7ecf2;
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.statistics {
+  width: 345px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+  font-weight: 400;
+  color: var(--secondTextColor);
+}
+
+.statList{
+    display: flex;
+}
+
+.item{
+    width: calc(100% / 5);
+    padding-top: 12px;
+    padding-bottom: 18px;
+    text-align: center;
+    color: var(--backgroundcolor);
+}
+
+.label{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+.percentage{
+    font-size: 18px;
+}
