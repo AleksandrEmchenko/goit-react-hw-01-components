@@ -30,7 +30,7 @@ TransactionHistory.propTypes = {
         PropTypes.exact({
             type: PropTypes.string.isRequired,
             amount: PropTypes.string.isRequired,
-            currency: PropTypes.number.isRequired,
+            currency: PropTypes.string.isRequired,
             id: PropTypes.string.isRequired,
         })
     )
