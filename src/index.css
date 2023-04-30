@@ -1,5 +1,18 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --firstTextColor: #000000;
+  --secondTextColor: #a1abb6;
+  --firstBackgroundColor: #f3f6f9;
+  --backgroundcolor: #e7ecf2;
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
 body {
   margin: 0;
   background-color: #e7ecf2;

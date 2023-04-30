@@ -1,12 +1,3 @@
-:root {
-  --firstTextColor: #000000;
-  --secondTextColor: #a1abb6;
-  --firstBackgroundColor: #f3f6f9;
-  --backgroundcolor: #e7ecf2;
-}
-* {
-  margin: 0;
-}
 .profile {
   display: block;
   margin: 0 auto;
