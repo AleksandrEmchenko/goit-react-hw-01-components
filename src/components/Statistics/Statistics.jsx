@@ -1,12 +1,19 @@
 import PropTypes from "prop-types";
-import css from "./Statistics.module.css";
+import {
+  StatisticsBox,
+  Title,
+  StatList,
+  Item,
+  Label,
+  Percentage,
+} from "./Statistics.styled";
 
 export function Statistics({ title, stats }) {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
+    <StatisticsBox>
+      {title && <Title>{title}</Title>}
 
-      <ul className={css.statList}>
+      <StatList>
         {stats.map(({ id, label, percentage }) => {
           const bgColor =
             "#" +
@@ -15,18 +22,14 @@ export function Statistics({ title, stats }) {
               .padStart(6, "f");
 
           return (
-            <li
-              className={css.item}
-              key={id}
-              style={{ backgroundColor: bgColor }}
-            >
-              <span className={css.label}>{label}</span>
-              <span className={css.percentage}>{percentage}%</span>
-            </li>
+            <Item key={id} style={{ backgroundColor: bgColor }}>
+              <Label>{label}</Label>
+              <Percentage>{percentage}%</Percentage>
+            </Item>
           );
         })}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticsBox>
   );
 }
 
