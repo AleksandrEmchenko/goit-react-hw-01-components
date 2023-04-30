@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "./Friends.module.css"
+import css from "./Friends.module.css";
 
 export function FriendList({ friends }) {
   return (
@@ -8,7 +8,12 @@ export function FriendList({ friends }) {
         return (
           <li className={css.item} key={id}>
             <span className={`${css.status} ${css[isOnline]}`}>{isOnline}</span>
-            <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+            <img
+              className={css.avatar}
+              src={avatar}
+              alt="User avatar"
+              width="48"
+            />
             <p className={css.name}>{name}</p>
           </li>
         );
@@ -18,12 +23,12 @@ export function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.arrayOf(
-        PropTypes.exact({
-            avatar: PropTypes.string,
-            name: PropTypes.string,
-            isOnline: PropTypes.bool.isRequired,
-            id: PropTypes.number.isRequired,
-        })
-    )
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string,
+      name: PropTypes.string,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
 };

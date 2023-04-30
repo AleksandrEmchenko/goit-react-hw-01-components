@@ -7,31 +7,31 @@
 }
 
 .title {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
   font-weight: 400;
   color: var(--secondTextColor);
 }
 
-.statList{
-    display: flex;
+.statList {
+  display: flex;
 }
 
-.item{
-    width: calc(100% / 5);
-    padding-top: 12px;
-    padding-bottom: 18px;
-    text-align: center;
-    color: var(--backgroundcolor);
+.item {
+  width: calc(100% / 5);
+  padding-top: 12px;
+  padding-bottom: 18px;
+  text-align: center;
+  color: var(--backgroundcolor);
 }
 
-.label{
-    display: block;
-    margin-bottom: 12px;
-    font-size: 12px;
+.label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
 }
 
-.percentage{
-    font-size: 18px;
+.percentage {
+  font-size: 18px;
 }
